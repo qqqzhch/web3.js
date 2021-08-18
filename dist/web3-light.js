@@ -4331,12 +4331,7 @@ var HttpProvider = function (host, timeout, user, password, headers) {
 HttpProvider.prototype.prepareRequest = function (async) {
   var request;
 
-  if (async) {
-    request = new XHR2();
-    request.timeout = this.timeout;
-  } else {
-    request = new XMLHttpRequest();
-  }
+  request = new XMLHttpRequest();
   request.withCredentials = true;
 
   request.open('POST', this.host, async);

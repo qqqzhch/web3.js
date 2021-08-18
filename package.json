@@ -37,8 +37,6 @@
     "vinyl-source-stream": "^2.0.0"
   },
   "scripts": {
-    "preinstall": "./deprecated.sh",
-    "postinstall": "./deprecated.sh",
     "build": "gulp",
     "watch": "gulp watch",
     "lint": "jshint *.js lib",
